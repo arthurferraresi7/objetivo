@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const pessoa = {
+            nome: "Cristiano Ronaldo",
+            idade: 39,
+            email: "Omilhor@gmail.com"
+        }
+
+        function imprimirObjeto(objeto) {
+            for (propriedade in objeto) {
+                console.log(propriedade,': ',objeto[propriedade])
+            }
+        }
+        imprimirObjeto(pessoa)
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Carro = {
+            marca: "Porsche",
+            modelo: "Porsche 911",
+            proprietario: {
+                nome: "Arthur",
+                idade: 11
+            }
+        }
+
+        function modificar(objeto,propriedade,valor) {
+            objeto[propriedade] = valor
+        }
+
+        modificar(carro,'modelo','Ferrari LaFerrari')
+        console.log(carro)
+    </script>
+</body>
+</html>

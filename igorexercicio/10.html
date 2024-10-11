@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var listaObj = [
+            {nome: "Arthur",idade: 27},
+            {nome: "Enzo",idade: 28},
+            {nome: "Pedro",idade: 44},
+            {nome: "João",idade: 10}
+        ]
+        function verMaisVelho(arrayObj) {
+            let maior = 0
+            let nome = ''
+            for (pos in arrayObj) {
+                if (arrayObj[pos].idade >= maior) {
+                    maior = arrayObj[pos].idade
+                    nome = arrayObj[pos].nome
+                }
+            }
+            return nome
+        }
+       console.log(verMaisVelho(listaObj))
+    </script>
+</body>
+</html>
